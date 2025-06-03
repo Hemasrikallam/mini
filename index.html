@@ -1,15 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Welcome | Legal Advisory Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to the Legal Advisory Platform</h1>
-    <p><a href="{{ url_for('user') }}">User Login</a></p>
-    <p><a href="{{url_for('lawyer')}}">Lawyer Login</a></p>
-    
+    <div class="background-overlay">
+        <div class="container">
+            <div class="header">
+                <h1>Welcome to the <br> Legal Advisory Platform</h1>
+                <p class="subtitle">Your trusted AI assistant for legal guidance</p>
+            </div>
+<div class="chatbot-link">
+                <a href="https://9042266a74cc6e83e9.gradio.live/" target="_blank" class="chatbot-btn">
+                    💬 Click Here to Access the Legal Chatbot
+                </a>
+            </div>
+            <div class="links">
+                <a href="{{ url_for('user') }}" class="btn">👤 User Login</a>
+                <a href="{{ url_for('lawyer') }}" class="btn">⚖️ Lawyer Login</a>
+            </div>
+
+            
+        </div>
+    </div>
 </body>
 </html>
